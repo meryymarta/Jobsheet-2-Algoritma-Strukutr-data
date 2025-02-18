@@ -7,12 +7,16 @@ public class DosenMain12 {
         dosen.statusAktif = true;
         dosen.tahunBergabung = 2019;
         dosen.bidangKeahlian = "Basis Data";
-        dosen.masaKerja = 6;
+        dosen.masaKerja = dosen.hitungMasaKerja(2025);
         
         dosen.tampilkanInformasi();
         dosen.setStatusAktif(false);
-        dosen.masaKerja = dosen.hitungMasaKerja(2025, 2019);
+        dosen.masaKerja = dosen.hitungMasaKerja(2025);
         dosen.ubahKeahlianBidang("Teknik Informatika");
         dosen.tampilkanInformasi();
+
+        Dosen12 dosen2 = new Dosen12 ("SQA678", "Alya Rahmah S.T", true,  2017, "Teknik Informatika" );
+        dosen2.tampilkanInformasi();
     }
+
 }

@@ -12,5 +12,15 @@ public class MataKuliahMain12 {
         BasisData.tambahJam(2);
         BasisData.kurangiJam(1);
         BasisData.tampilkanInformasi();
+    
+
+    MataKuliah12 Ctps = new MataKuliah12("WRTY123", "CTPS", 3, 4);
+     Ctps.tampilkanInformasi();
+     Ctps.ubahSKS(2);
+     Ctps.tambahJam(1);
+     Ctps.kurangiJam(0);
+
     }
+    
+        
 }

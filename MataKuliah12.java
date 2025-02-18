@@ -13,6 +13,7 @@ public class MataKuliah12 {
     }
     void ubahSKS(int sksBaru){
         sks = sksBaru;
+        
     }
     void tambahJam(int Jam){
         jumlahJam += Jam;
@@ -25,7 +26,19 @@ public class MataKuliah12 {
 
             }
         }
-    }
+
+            public MataKuliah12(){
+
+            }
+            public MataKuliah12(String km, String nama, int sks, int jumlahJam) {
+                this.kodeMK = km;
+                this.nama = nama;
+                this.sks = sks;
+                this.jumlahJam = jumlahJam;
+            }
+        }
+        
+    
 
     
 

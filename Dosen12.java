@@ -21,14 +21,27 @@ public class Dosen12 {
     void setStatusAktif(boolean status) {
         statusAktif = status;
     }
-    public int hitungMasaKerja(int tahunSekarang, int tahunBergabung){
-    int masaKerja = tahunSekarang - tahunBergabung;
-     return masaKerja;
+    public int hitungMasaKerja(int tahunSekarang){
+    return tahunSekarang - this.tahunBergabung;
+    
         
     }
     void ubahKeahlianBidang(String Bidang) {
         bidangKeahlian = Bidang;
     }
+
+
+public Dosen12(){
+
+}
+public Dosen12(String id, String nama, boolean statusAktif, int tahunBergabung, String bidangKeahlian) {
+    this.idDosen = id;
+    this.nama = nama;
+    this.statusAktif = statusAktif;
+    this.tahunBergabung = tahunBergabung;
+    this.bidangKeahlian = bidangKeahlian;
+    this.masaKerja = hitungMasaKerja(2025);
+}
 }
 
     
